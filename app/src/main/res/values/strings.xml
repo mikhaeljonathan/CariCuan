@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cari Cuan</string>
+
+    <string-array name="classes">
+        <item>PPTI 8</item>
+        <item>PPTI 7</item>
+        <item>PPTI 6</item>
+        <item>PPA 51</item>
+        <item>PPA 50</item>
+        <item>PPA 49</item>
+        <item>PPA 48</item>
+        <item>PPA 47</item>
+        <item>PPA 46</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

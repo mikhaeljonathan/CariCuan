@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Catalogs.SellActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Upload Your Catalog"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp" />
+
+            <ImageButton
+                android:id="@+id/edit_image_btn"
+                android:layout_below="@id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/add_btn"
+                android:src="@drawable/add_btn"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/edit_error"
+                android:layout_below="@id/edit_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Photo"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_below="@+id/edit_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Post Title ..."
+                android:minLines="1"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_below="@id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Post Description ..."/>
+
+            <EditText
+                android:id="@+id/edit_stock"
+                android:layout_below="@id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Stock ..."/>
+
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_below="@id/edit_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Price ... (Can't be changed in the future)"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Catalog"
+        android:id="@+id/edit_btn"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

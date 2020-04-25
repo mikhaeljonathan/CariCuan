@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transactions.SingleTransactionActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/single_transaction_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:src="@drawable/ic_payable_black_24dp" />
+
+        <Button
+            android:id="@+id/single_transaction_save"
+            android:layout_below="@id/single_transaction_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Save" />
+
+        <TextView
+            android:id="@+id/single_transaction_title"
+            android:layout_below="@id/single_transaction_save"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            tools:text="Dori"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/single_transaction_user"
+            android:layout_below="@id/single_transaction_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            tools:text="Seller:\nMikhael Jonathan - PPTI 8" />
+
+        <TextView
+            android:id="@+id/single_transaction_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/single_transaction_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            tools:text="Rp 10.000" />
+
+        <TextView
+            android:id="@+id/single_transaction_text"
+            android:layout_below="@id/single_transaction_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:text="Upload your receipt here" />
+
+        <ImageView
+            android:id="@+id/single_transaction_receipt"
+            android:layout_below="@id/single_transaction_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_btn"
+            android:layout_margin="30dp" />
+
+        <Button
+            android:id="@+id/single_transaction_save_receipt"
+            android:layout_below="@id/single_transaction_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Save Receipt"/>
+
+        <TextView
+            android:id="@+id/single_transaction_note"
+            android:layout_below="@id/single_transaction_save_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:text="Your receipt has rejected from the seller.\nPlease resubmit your receipt"
+            tools:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/single_transaction_upload_btn"
+            android:layout_below="@id/single_transaction_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Upload receipt"/>
+
+        <Button
+            android:id="@+id/single_transaction_cancel_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/single_transaction_upload_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Cancel\nOrder"/>
+
+        <LinearLayout
+            android:id="@+id/single_transaction_container"
+            android:layout_below="@id/single_transaction_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/single_transaction_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:text="Reject" />
+
+            <Button
+                android:id="@+id/single_transaction_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00FF00"
+                android:text="Accept" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

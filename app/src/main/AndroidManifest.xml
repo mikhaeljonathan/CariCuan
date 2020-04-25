@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.caricuan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Profiles.EditProfileActivity"></activity>
+        <activity android:name=".Entries.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Transactions.SingleTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Catalogs.EditCatalogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Catalogs.SingleCatalogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Catalogs.SellActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Entries.SetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Entries.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Entries.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Entries.FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

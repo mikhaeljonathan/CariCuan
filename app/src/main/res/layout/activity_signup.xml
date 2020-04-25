@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context=".Entries.LoginActivity">
+
+    <EditText
+        android:id="@+id/signup_email_field"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/signup_password_field"
+        android:layout_below="@id/signup_email_field"
+        android:hint="Password"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/signup_confirm_field"
+        android:layout_below="@id/signup_password_field"
+        android:hint="Confirm Password"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:backgroundTint="@android:color/white"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/signup_error"
+        android:text="Passwords don't match"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@id/signup_confirm_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_below="@id/signup_error"
+        android:text="Sign up with email"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

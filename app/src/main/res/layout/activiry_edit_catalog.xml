@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Catalogs.SellActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/edit_image_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/add_btn"
+                android:src="@drawable/add_btn"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_below="@+id/edit_image_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Edit Title ..."
+                android:minLines="1"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_below="@id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Edit Description ..."/>
+
+            <EditText
+                android:id="@+id/edit_stock"
+                android:layout_below="@id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Edit Stock ..."/>
+
+            <TextView
+                android:id="@+id/edit_price"
+                android:layout_below="@id/edit_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Edit Price ..."/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Catalog"
+        android:id="@+id/edit_btn"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Catalog"
+        android:id="@+id/edit_del_btn"
+        android:background="@android:color/holo_red_dark"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

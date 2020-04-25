@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_24dp"
+        android:title="Add Post"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort_24dp"
+        android:title="Sort"
+        app:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/sort_all"
+                android:title="All" />
+            <item android:id="@+id/sort_mine"
+                android:title="Mine" />
+            <item android:id="@+id/sort_PPTI8"
+                android:title="PPTI 8" />
+            <item android:id="@+id/sort_PPTI7"
+                android:title="PPTI 7" />
+            <item android:id="@+id/sort_PPTI6"
+                android:title="PPTI 6" />
+            <item android:id="@+id/sort_PPA51"
+                android:title="PPA 51" />
+            <item android:id="@+id/sort_PPA50"
+                android:title="PPA 50" />
+            <item android:id="@+id/sort_PPA49"
+                android:title="PPA 49" />
+            <item android:id="@+id/sort_PPA48"
+                android:title="PPA 48" />
+            <item android:id="@+id/sort_PPA47"
+                android:title="PPA 47" />
+            <item android:id="@+id/sort_PPA46"
+                android:title="PPA 46" />
+
+        </menu>
+    </item>
+
+</menu>

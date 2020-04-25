@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Entries.LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="20dp" >
+
+        <ImageButton
+            android:id="@+id/edit_profile_image"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_24dp"
+            android:padding="10dp"
+            android:layout_width="150dp"
+            android:background="@drawable/round_corner"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:id="@+id/edit_profile_name"
+            android:layout_below="@id/edit_profile_image"
+            android:hint="Full Name"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:backgroundTint="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/setup_linear"
+            android:layout_below="@id/edit_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="Class :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/setup_class_spinner"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can't change the class in the future"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_profile_text"
+            android:layout_below="@id/setup_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your QR here:"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/edit_profile_qr"
+            android:layout_below="@id/edit_profile_text"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/setup_error_text"
+            android:layout_below="@id/edit_profile_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Choose QR" />
+
+        <Button
+            android:id="@+id/edit_profile_button"
+            android:layout_below="@id/setup_error_text"
+            android:text="Set up the account"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

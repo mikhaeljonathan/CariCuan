@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Profiles.EditProfileActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/edit_profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Edit Profile"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/edit_profile_image"
+            android:layout_below="@id/edit_profile_title"
+            android:layout_centerHorizontal="true"
+            tools:src="@drawable/ic_add_24dp"
+            android:padding="10dp"
+            android:layout_width="150dp"
+            android:background="@drawable/round_corner"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:id="@+id/edit_profile_name"
+            android:layout_below="@id/edit_profile_image"
+            android:hint="Full Name"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:backgroundTint="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/edit_profile_text"
+            android:layout_below="@id/edit_profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change your QR here:"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/edit_profile_qr"
+            android:layout_below="@id/edit_profile_text"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:id="@+id/edit_profile_button"
+            android:layout_below="@id/edit_profile_qr"
+            android:text="Edit Profile"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>
