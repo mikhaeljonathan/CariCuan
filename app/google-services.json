@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:244430154897:android:3ac4f8fe0fe6389a7aa330",
+        "mobilesdk_app_id": "1:244430154897:android:df9de93db7bbbe287aa330",
         "android_client_info": {
-          "package_name": "com.example.caricuan"
+          "package_name": "cari.cuan.bli"
         }
       },
       "oauth_client": [
         {
-          "client_id": "244430154897-s3pgeci75uke81h13iicfgo96q5knv30.apps.googleusercontent.com",
+          "client_id": "244430154897-2siq7s28sohhe2qtbh1fgda3m7u5j4vh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.caricuan",
+            "package_name": "cari.cuan.bli",
             "certificate_hash": "3375aaef9dd752be7f76474cfce2bff1eaf100c5"
           }
         },

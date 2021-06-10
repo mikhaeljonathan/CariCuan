@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.caricuan">
+    package="cari.cuan.bli">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -13,8 +13,8 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profiles.EditProfileActivity"></activity>
-        <activity android:name=".Entries.Splash">
+        <activity android:name="cari.cuan.bli.Profiles.EditProfileActivity"></activity>
+        <activity android:name="cari.cuan.bli.Entries.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,34 +22,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Transactions.SingleTransactionActivity"
+            android:name="cari.cuan.bli.Transactions.SingleTransactionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Catalogs.EditCatalogActivity"
+            android:name="cari.cuan.bli.Catalogs.EditCatalogActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Catalogs.SingleCatalogActivity"
+            android:name="cari.cuan.bli.Catalogs.SingleCatalogActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Catalogs.SellActivity"
+            android:name="cari.cuan.bli.Catalogs.SellActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".Entries.SetupActivity"
+            android:name="cari.cuan.bli.Entries.SetupActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Entries.SignupActivity"
+            android:name="cari.cuan.bli.Entries.SignupActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Entries.LoginActivity"
+            android:name="cari.cuan.bli.Entries.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Entries.FirstActivity"
+            android:name="cari.cuan.bli.Entries.FirstActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="cari.cuan.bli.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
